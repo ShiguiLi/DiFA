@@ -1,8 +1,0 @@
-# PyTorch/torchvision: install the CUDA-compatible pair shown in README.md.
-torchdiffeq==0.2.5
-numpy
-timm
-diffusers
-accelerate
-pillow
-tqdm
