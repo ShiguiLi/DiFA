@@ -1,0 +1,13 @@
+__pycache__
+wandb
+
+.DS_store
+.DS_Store
+samples
+results
+pretrained_models
+*.py[cod]
+*.pt
+*.pth
+*.safetensors
+sample_difa.png
