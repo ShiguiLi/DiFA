@@ -1,0 +1,24 @@
+@InProceedings{pmlr-v306-li26iv,
+  title = 	 {{D}i{FA}: Inference-Time Forward-Process Alignment for Diffusion Models},
+  author =       {Li, Shigui and Zeng, Delu},
+  booktitle = 	 {Proceedings of the 43rd International Conference on Machine Learning},
+  pages = 	 {72134--72156},
+  year = 	 {2026},
+  editor = 	 {Zhang, Tong and Dudik, Miroslav and Jaggi, Martin and Agarwal, Alekh and Li, Sharon and Schuurmans, Dale and Zhu, Jerry and Berkenkamp, Felix and Dong, Hanze and Bietti, Alberto},
+  volume = 	 {306},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26iv/li26iv.pdf},
+  url = 	 {https://proceedings.mlr.press/v306/li26iv.html},
+  abstract = 	 {The prevailing inference framework for diffusion models formulates generation fundamentally as a problem of numerical integration. This perspective casts the model as an accurate estimator, neglecting the inherent statistical uncertainty of the denoising process. In this work, we propose Forward-Process Aligned Diffusion prediction (DiFA), a training-free framework that reframes inference-time clean-signal prediction refinement within diffusion sampling as a sequential state estimation problem. Instead of discarding historical predictions, DiFA treats the inference trajectory as a sequence of correlated observations with varying uncertainties. Inspired by Kalman estimation, DiFA builds a logSNR-aware temporal consensus to align historical clean predictions. Crucially, to counteract the over-smoothing typically associated with temporal consensus, we introduce a deviation guidance mechanism that adaptively preserves residual details. Empirically, DiFA yields significant improvements on CIFAR-10 and ImageNet across the evaluated metrics, including FID, IS, and FD-DINOv2, demonstrating that aligning inference with the forward statistical structure substantially improves generative fidelity.}
+}
+
+@misc{li2026difa_arxiv,
+  title         = {{D}i{FA}: Inference-Time Forward-Process Alignment for Diffusion Models},
+  author        = {Li, Shigui and Zeng, Delu},
+  year          = {2026},
+  eprint        = {2607.17972},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2607.17972}
+}

@@ -1,0 +1,18 @@
+{
+  "model": "SiT-XL/2",
+  "image_size": 256,
+  "num_classes": 1000,
+  "checkpoint": "./data/pretrained/SiT-XL-2-256x256.pt",
+  "vae": "./data/pretrained/sd-vae-ft-ema",
+  "solver": "heun",
+  "num_steps": 20,
+  "cfg_scale": 1.5,
+  "guidance_scale": 1.75,
+  "difa": true,
+  "seed": 1,
+  "batch_size": 32,
+  "num_samples": 8,
+  "history_size": 3,
+  "refinement_chunk_size": 125,
+  "output_dir": "./outputs/samples"
+}

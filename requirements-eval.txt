@@ -1,0 +1,6 @@
+# Optional CPU evaluation environment; Python 3.12 is supported.
+tensorflow-cpu==2.18.0
+numpy>=1.26,<2.1
+scipy>=1.11,<2
+Pillow>=10,<13
+tqdm>=4.66,<5

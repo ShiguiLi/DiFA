@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "difa-inference"
+version = "0.3.0"
+description = "DiFA: inference-time forward-process alignment for diffusion models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "SiT/LICENSE.txt"]
+authors = [{name = "Shigui Li"}, {name = "Delu Zeng"}]
+dependencies = ["torch>=2.7"]
+
+[project.optional-dependencies]
+sit = ["torchvision", "torchdiffeq==0.2.5", "numpy>=1.26,<2.1", "scipy", "timm", "diffusers", "accelerate", "Pillow", "tqdm"]
+evaluation = ["tensorflow-cpu==2.18.0", "numpy>=1.26,<2.1", "scipy", "Pillow", "tqdm"]
+
+[project.urls]
+Repository = "https://github.com/ShiguiLi/DiFA"
+Paper = "https://arxiv.org/abs/2607.17972"
+
+[tool.setuptools.packages.find]
+include = ["difa", "difa.*", "SiT", "SiT.*"]
